@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-03</title>
+    <!--font sora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!--tailwind CDN-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        
+.font-sora {
+  font-family: "Sora", serif;
+ 
+}
+hr{
+    color: #179800;
+    
+}
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--header-->
+    <header class="bg-gradient-to-t	from-amber-50 to-orange-50">
+        <nav class=" flex md:mx-28 justify-between mb-7 md:mb-20">
+            <div class="ml-4 mt-3 md:mt-5 mr-56">
+                <img src="c2-assets/logo-header.png" alt="">
+            </div>
+            <div class=" hidden md:block mt-8  ">
+                <ul class="flex gap-6 text-xl ">
+                    <li>Product</li>
+                    <li>Services</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="md:mt-6 gap-2 flex ">
+                <i class="hidden md:block fa-solid fa-magnifying-glass mr-3 mt-5"></i>
+                <i class=" hidden md:block fa-solid fa-cart-shopping mr-4 mt-5"></i>
+                <button class=" hidden md:block mr-2 border border-[#179800] px-6 py-2 rounded-xl">Login</button>
+                <button class="hidden md:block bg-[#179800] text-white px-6 py-2 rounded-xl">Register</button>
+                <i class="fa-solid fa-bars block md:hidden mt-8 mr-4 p-1.5  text-[#179800] border border-green-500"></i>
+            </div>
+        </nav>
+        <div class="block md:hidden mb-10 bg-[#179800] h-0.5">
+            <hr>
+        </div>
+        <!--new div-->
+        <div class="text-center">
+            <h1 class="font-semibold text-5xl mb-6">Freshness<span class="text-[#179800]">You Can<br>Count</span> On, Prices You’ll Love!</h1>
+            <p class="mb-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            <img class="md:w-1/2 mx-auto mb-12 md:mb-28" src="c2-assets/hero-vegetables.png" alt="">
+        </div>
+
+    </header>
+    <!--main-->
+    <main class="">
+        <h1 class="text-green-400 font-semibold text-4xl mb-10 mx-4 md:mx-28">Services</h1>
+        <!--3 div-->
+        <div class=" grid grid-cols-1 md:grid-cols-3 gap-4  mx-4 md:mx-28 ">
+            <div class="bg-[#EFEBE3] items-center justify-center text-center rounded-xl">
+                <img  class="bg-white rounded-full p-3 mb-3 mx-auto mt-5" src="c2-assets/service.png" alt="">
+                <h3 class="font-semibold text-2xl mb-3">24/7 Services </h3>
+                <p class="mb-8">Restaurants can send text messages to customers for a variety of reasons, including order status, reservations, and marketing</p>
+            </div>
+            <div class="bg-[#EFEBE3] text-center rounded-xl">
+                <img class="bg-white rounded-full p-3 mb-3 mx-auto mt-5" src="c2-assets/delivery.png" alt="">
+                <h3 class="font-semibold text-2xl mb-3">Fast Delivery</h3>
+                <p class="mb-8">Fast delivery-related text can include delivery service confirmation messages, delivery status updates, and messages about delivery delays.</p>
+            </div>
+            <div class="bg-[#EFEBE3] rounded-xl text-center">
+                <img class="bg-white rounded-full p-3 mb-3 mx-auto mt-5" src="c2-assets/healthy.png" alt="">
+                <h3 class="font-semibold text-2xl mb-3">Healthy Products </h3>
+                <p class="mb-8">A slogan should be concise and easily memorable. Aim for a maximum of five to seven words.</p>
+            </div>
+        </div>
+
+        <!--2nd main div-->
+
+        <div class="bg-[#EFEBE3] mt-20  ">
+            <h1 class="font-semibold text-3xl text-[#179800] mb-12 mx-4 md:mx-28 pt-24">Popular Products</h1>
+
+            <div class="md:grid grid-cols-3 mx-4 md:mx-28  md:gap-4 mb-20 md:mb-36 pb-28">
+                <!--1st div-->
+                <div class="bg-gradient-to-t from-green-500 to-lime-300 pl-8 pt-10 rounded-xl col-span-1 h-auto flex">
+                    <div>
+                    <h2 class="font-bold text-white text-3xl pb-3">30% off</h2>
+                    <p class="pb-3">Discover a world of treats, toys, and <br> essentials handpicked for </p>
+                    <button class="bg-white text-black rounded-xl px-6 py-2 mb-12">Buy Now</button>
+                    </div>
+                    <div class="pt-32">
+                    <img class="" src="c2-assets/vegetable-offer.png" alt="">
+                    </div>
+                </div>
+                <!--2nd div-->
+                <!--1st-->
+                <div class=" md:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-3 ">
+                    <div class="flex bg-white rounded-xl gap-1 md:gap-2">
+                        <div class="rounded-xl m-auto py-4 pl-2">
+                            <img class="bg-[#EFEBE3] rounded-xl" src="c2-assets/onion.png" alt="">
+                        </div>
+                        <div class="m-auto">
+                            <i class="fa-solid fa-star">4.5</i>
+                            <h3 class="font-semibold">Onion 1 KG</h3>
+                            <h5 class="text-base">$39.99</h5>
+                        </div>
+                    </div>
+
+                    <!--2nd-->
+
+                    <div class="bg-white rounded-xl gap-1 md:gap-2 flex">
+                        <div class="rounded-xl m-auto py-4 pl-2">
+                            <img class="bg-[#EFEBE3] rounded-xl" src="c2-assets/tomato.png" alt="">
+                        </div>
+                        <div class="m-auto">
+                            <i class="fa-solid fa-star"> 4.5</i>
+                            <h3 class=" font-semibold">Tomato 500g</h3>
+                            <h5 class="text-base">$39.99</h5>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl gap-1 md:gap-2 flex">
+                        <div class="rounded-xl m-auto py-4 pl-2" >
+                            <img class="bg-[#EFEBE3] rounded-xl" src="c2-assets/potato.png" alt="">
+                        </div>
+                        <div class="m-auto">
+                            <i class="fa-solid fa-star"> 4.5</i>
+                            <h3 class="font-semibold">Potato 500g</h3>
+                            <h5 class="text-base">$39.99</h5>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl gap-1 md:gap-2 flex">
+                        <div class="rounded-xl m-auto py-4 pl-2">
+                            <img class="bg-[#EFEBE3] rounded-xl" src="c2-assets/tomato.png" alt="">
+                        </div>
+                        <div class="m-auto">
+                            <i class="fa-solid fa-star"> 4.5</i>
+                            <h3 class="font-semibold">Tomato 500g</h3>
+                            <h5 class="text-base">$39.99</h5>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl gap-1 md:gap-2 flex">
+                        <div class="rounded-xl m-auto py-4 pl-2">
+                            <img class="bg-[#EFEBE3] rounded-xl" src="c2-assets/potato.png" alt="">
+                        </div>
+                        <div class="m-auto">
+                            <i class="fa-solid fa-star"> 4.5</i>
+                            <h3 class="font-semibold">potato 500 g</h3>
+                            <h5 class="text-base">$39.99</h5>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl gap-1 md:gap-2 flex">
+                        <div class="rounded-xl m-auto py-4 pl-2">
+                            <img class="bg-[#EFEBE3] rounded-xl" src="c2-assets/onion.png" alt="">
+                        </div>
+                        <div class="m-auto">
+                            <i class="fa-solid fa-star"> 4.5</i>
+                            <h3 class="font-semibold">Onion 1 KG</h3>
+                            <h5 class="text-base">$39.99</h5>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl gap-1 md:gap-2 flex">
+                        <div class="rounded-xl m-auto py-4 pl-2">
+                            <img class="bg-[#EFEBE3] rounded-xl" src="c2-assets/tomato.png" alt="">
+                        </div>
+                        <div class="m-auto">
+                            <i class="fa-solid fa-star"> 4.5</i>
+                            <h3 class="font-semibold">Tomato 500 g</h3>
+                            <h5 class="text-base">$39.99</h5>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl gap-1 md:gap-2 flex">
+                        <div class="rounded-xl m-auto py-4 pl-2">
+                            <img class="bg-[#EFEBE3] rounded-xl" src="c2-assets/onion.png" alt="">
+                        </div>
+                        <div class="m-auto">
+                            <i class="fa-solid fa-star"> 4.5</i>
+                            <h3 class=" font-semibold">Onion 1 KG</h3>
+                            <h5 class="text-base">$39.99</h5>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl gap-1 hidden md:flex block">
+                        <div class="rounded-xl mx-auto py-4 pl-2">
+                            <img class="bg-[#EFEBE3] rounded-xl" src="c2-assets/potato.png" alt="">
+                        </div>
+                        <div class="m-auto">
+                            <i class="fa-solid fa-star"> 4.5</i>
+                            <h3 class="font-semibold">Potato 500 g</h3>
+                            <h5 class="text-base">$39.99</h5>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!--4rt part-->
+
+        <div class="mx-4 md:mx-28 ">
+            <h2 class="font-semibold text-3xl text-[#179800] mb-7">Arrival & Offers</h2>
+
+            <div class=" md:grid grid-cols-5 gap-3">
+            <div class="flex col-span-3 bg-[#115414] rounded-xl">
+                <div class="m-auto text-center">
+                    <img src="c2-assets/dawat-logo.png" alt="">
+                    <button class="bg-[#63B76D] rounded-xl px-5 py-3 mt-9 text-white ">Cook Exotic Dishes</button>
+                    <h1 class="text-white font-semibold text-xl mt-5 ">UP to <span class="font-bold">20% OFF</span></h1>
+                </div>
+                <div>
+                    <img class="" src="c2-assets/dawat-mock-up.png" alt="">
+                </div>
+
+            </div>
+            <div class="col-span-2 flex bg-[#102861] rounded-xl mt-4 md:mt-auto">
+                <div class="m-auto">
+                    <img src="c2-assets/india-gate-logo.png" alt="">
+                    <button class="text-white bg-[#2A4D97] px-5 py-3 rounded-xl mt-5 mb-4">World’s No.1 Rice</button>
+                    <h2 class="text-white font-semibold text-xl">UP to <span class="font-bold">40% OFF</span></h2>
+
+                </div>
+                <div class="mt-5">
+                    <img class="m-auto" src="c2-assets/india-gate-mock-up.png" alt="">
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+        <!--abnormal part-->
+        <div class="mx-4 md:mx-28  md:grid grid-cols-2 mt-32 -mb-80 bg-[#EFEBE3] ">
+            <div class="m-auto">
+                <img src="c2-assets/vegetable-busket.png" alt="">
+
+
+            </div>
+            <div class="m-auto" >
+                <h1>Get Grocery News!</h1>
+                <p>Exclusive training tips, ticks, product deals and more.</p>
+                <input type="email" placeholder="Enter email"><br>
+                <button class="bg-[#179800]">Subscribe</button>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!--footer-->
+    <footer class="bg-[#179800] mt-72 md:mt-96">
+        <div class=" md:grid grid-cols-3 mx-4 md:mx-28 pt-64 md:pt-72 pb-10 md:pb-32 gap-36  justify-between">
+        <div class="mb-9">
+            <img src="c2-assets/logo-footer.png" alt="">
+            <p class="text-white mt-5">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+        </div>
+        <div class="mb-8 md:ml-14 ">
+            <ul class="text-white ">
+                <li class="mb-4 md:mb-6">Product</li>
+                <li class="mb-4 md:mb-6">Services</li>
+                <li>Contact us</li>
+
+            </ul>
+
+
+        </div>
+        <div class="text-white md:ml-32 ">
+            <h5 class="mb-3 md:mb-5">Follow Us</h5>
+            <div class="flex gap-4">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+            </div>
+
+
+        </div>
+        </div>
+
+
+    </footer>
+</body>
+</html>
