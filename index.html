@@ -35,6 +35,38 @@ hr{
         }
       </script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              keyframes: {
+                typing: {
+                  "0%": {
+                    width: "50%",
+                    visibility: "block"
+                  },
+                  "100%": {
+                    width: "100%"
+                  }
+                },
+                blink: {
+                  "50%": {
+                    borderColor: "transparent"
+                  },
+                  "100%": {
+                    borderColor: "white"
+                  }
+                }
+              },
+              animation: {
+                typing: "typing 4s steps(10) infinite alternate, blink .7s infinite"
+              }
+            },
+          },
+          plugins: [],
+        }
+      </script>
 </head>
 <body>
     <!--header-->
@@ -63,7 +95,8 @@ hr{
         </div>
         <!--new div-->
         <div class="text-center">
-            <h1 class="font-semibold text-5xl mb-6">Freshness<span class="text-[#179800]">You Can<br>Count</span> On, Prices You’ll Love!</h1>
+            <h1 class=" animate-typing font-semibold text-5xl mb-6">Freshness<span class="text-[#179800]"> You Can<br>Count</span> On, Prices You’ll Love!</h1>
+          </h1>
             <p class="mb-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
             <img class="md:w-1/2 mx-auto mb-12 md:mb-28" src="c2-assets/hero-vegetables.png" alt="">
         </div>
